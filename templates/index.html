@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Rastreador de Preços</title>
+  </head>
+  <body>
+    <h1>Rastreador de Preços</h1>
+    <form method="POST">
+      <label for="url">URL do Produto:</label><br />
+      <input type="text" id="url" name="url" /><br />
+      <input type="submit" value="Rastrear Preço" />
+    </form>
+    <p>{{ message }}</p>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rastreador de Preços</title>
+    <meta http-equiv="refresh" content="10" />
+  </head>
+  <body>
+    <h1>Rastreador de Preços</h1>
+    <form method="POST">
+      <label for="url">URL do Produto:</label><br />
+      <input type="text" id="url" name="url" /><br />
+      <input type="submit" value="Rastrear Preço" />
+    </form>
+    <form method="POST" action="/stop">
+      <input type="submit" value="Parar Monitoramento" />
+    </form>
+
+    <p>{{ message }}</p>
+    <p>Número de e-mails enviados: {{ emails_sent }}</p>
+  </body>
+</html>
