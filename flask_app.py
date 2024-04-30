@@ -69,8 +69,8 @@ def envia_email(URL):
     msg = f"Subject: {assunto}\n\n{corpo}"
 
     server.sendmail(
-        'rjr89000@gmail.com',
-        'rjr89000@outlook.com',
+        # 'rjr89000@gmail.com',
+        # 'rjr89000@outlook.com',
         msg,
         
     )
